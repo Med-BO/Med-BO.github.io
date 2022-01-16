@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'consolas';
+  background-color: turquoise;
+}
+
+.mc {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#mc-title {
+  color: white;
+}
+
+#mc-run {
+  color: white;
+  background-color: black;
+}
