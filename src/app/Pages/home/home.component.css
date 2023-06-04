@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-img {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #2F2F2F;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 60px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 32px; /** I'm animating max-width because width needs to be auto, and auto can't be animated **/
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.9s;
+}
+  
+.button:hover {
+    max-width: 300px;
+}
+  
+.icon {
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    margin-right: 15px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+}
+  
+.text {
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+.start-icon {
+    font-size: 24px;
+    color: #00B3DA;
+}
