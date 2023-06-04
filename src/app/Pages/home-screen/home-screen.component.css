@@ -17,6 +17,9 @@ body {
 .logo-img {
     width: 400px;
     margin-bottom: 30px;
+    position: relative;
+    animation-name: become-sidebar-logo;
+    animation-duration: 4s;
 }
 
 .button {
@@ -54,4 +57,10 @@ body {
 .start-icon {
     font-size: 24px;
     color: #00B3DA;
+}
+
+@keyframes become-sidebar-logo {
+    0% {margin-right: 0%;}
+    70% {margin-right: 150%; margin-top: -50%; width: 200px;}
+    100% {width: 600px;}
 }
