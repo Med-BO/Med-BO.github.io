@@ -16,7 +16,13 @@ export class LandingScreenComponent implements OnInit {
   }
 
   displayMainScreen() {
-    this.router.navigate(["home"]);
+    let element = document.querySelector('.button');
+    element!.classList.add('animate__animated', 'animate__fadeOut');
+    element = document.querySelector('.logo-img');
+    element!.classList.add('animate__animated', 'animate__zoomOut', 'animate__slow');
+    setTimeout(() =>{
+      this.router.navigate(["home"]);
+    }, 1000);
   }
 
 }
