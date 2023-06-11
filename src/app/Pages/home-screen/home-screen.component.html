@@ -7,47 +7,48 @@
         <div class="sidebar-content">
             <p class="sidebar-section-title">Who am I ?</p>
             <div class="sidebar-menu-container">
-                <div class="sidebar-menu-item">
+                <div class="sidebar-menu-item" routerLink="/home/profile">
                     <i class="fa fa-user sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Profile</span>
                 </div>
-                <div class="sidebar-menu-item">
+                <div class="sidebar-menu-item" routerLink="/home/education">
                     <i class="fa fa-user-graduate sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Education</span>
                 </div>
-                <div class="sidebar-menu-item">
+                <div class="sidebar-menu-item" routerLink="/home/interests">
                     <i class="fa fa-chess-knight sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Interests</span>
                 </div>
             </div>
             <p class="sidebar-section-title">Professional Experience</p>
             <div class="sidebar-menu-container">
-                <div class="sidebar-menu-item">
+                <div class="sidebar-menu-item" routerLink="/home/experience">
                     <i class="fa fa-laptop sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Experience</span>
                 </div>
-                <div class="sidebar-menu-item">
+                <div class="sidebar-menu-item" routerLink="/home/projects">
                     <i class="fa fa-laptop-code sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Projects</span>
                 </div>
-                <div class="sidebar-menu-item">
+                <div class="sidebar-menu-item" routerLink="/home/skills">
                     <i class="fa fa-code sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Technical Skills</span>
                 </div>
             </div>
-            <div class="sidebar-footer">
-                <i class="fa fa-download"></i>Download my CV
-            </div>
         </div>
         <div class="sidebar-footer">
-
+            <i class="fa fa-download"></i>Download my CV
         </div>
     </div>
     <div class="separator">
 
     </div>
     <div class="main-content-container">
-
+        <div class="route-info">
+            <span *ngFor="let pathElem of routePath" class="route-path-element">{{pathElem}} /&nbsp;</span>
+            <span class="active-route">{{activeRoute}}</span>   
+        </div><!--This div will display the current route path the user is in-->
+        <router-outlet></router-outlet>
     </div>
 </div>
    
