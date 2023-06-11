@@ -7,30 +7,30 @@
         <div class="sidebar-content">
             <p class="sidebar-section-title">Who am I ?</p>
             <div class="sidebar-menu-container">
-                <div class="sidebar-menu-item" routerLink="/home/profile">
+                <div class="sidebar-menu-item" routerLink="/home/profile" (click)="selectSidebarMenuItem($event)">
                     <i class="fa fa-user sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Profile</span>
                 </div>
-                <div class="sidebar-menu-item" routerLink="/home/education/loc">
+                <div class="sidebar-menu-item" routerLink="/home/education/loc" (click)="selectSidebarMenuItem($event)">
                     <i class="fa fa-user-graduate sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Education</span>
                 </div>
-                <div class="sidebar-menu-item" routerLink="/home/interests">
+                <div class="sidebar-menu-item" routerLink="/home/interests" (click)="selectSidebarMenuItem($event)">
                     <i class="fa fa-chess-knight sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Interests</span>
                 </div>
             </div>
             <p class="sidebar-section-title">Professional Experience</p>
             <div class="sidebar-menu-container">
-                <div class="sidebar-menu-item" routerLink="/home/experience">
+                <div class="sidebar-menu-item" routerLink="/home/experience" (click)="selectSidebarMenuItem($event)">
                     <i class="fa fa-laptop sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Experience</span>
                 </div>
-                <div class="sidebar-menu-item" routerLink="/home/projects">
+                <div class="sidebar-menu-item" routerLink="/home/projects" (click)="selectSidebarMenuItem($event)">
                     <i class="fa fa-laptop-code sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Projects</span>
                 </div>
-                <div class="sidebar-menu-item" routerLink="/home/skills">
+                <div class="sidebar-menu-item" routerLink="/home/skills" (click)="selectSidebarMenuItem($event)">
                     <i class="fa fa-code sidebar-menu-item-icon"></i>
                     <span class="sidebar-menu-item-title">Technical Skills</span>
                 </div>

@@ -37,5 +37,15 @@ export class HomeScreenComponent implements OnInit {
     link.download = 'resume-mohamed-ben-othman.pdf';
     link.click();
   }
+
+  selectSidebarMenuItem(event: Event) {
+    const elements = document.getElementsByClassName('sidebar-menu-item');
+    for (let i = 0; i < elements.length; i++) {
+      const element = elements[i] as HTMLElement;
+      element.style.backgroundColor = '#1E1E1E';
+    }
+    const clickedDiv = event.target as HTMLElement;
+    clickedDiv.style.backgroundColor = '#0074FF';
+  }
   
 }
