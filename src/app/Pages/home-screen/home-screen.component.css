@@ -1,8 +1,114 @@
-.container {
-    background: #191b1f;
+.background {
+    background: #1E1E1E;
     width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    padding: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+.separator {
+    height: 50%;
+    width: 0px;
+    border-left: 5px solid #2C2C2C;
+    border-radius: 10px;
+}
+
+.main-content-container {
+    width: 74%;
+    height: 100%;
+    background-color: #2C2C2C;
+    border-radius: 24px;
+}
+
+/*Sidebar Styling*/
+.sidebar-container {
+    padding: 1.5%;
+    width: 22%;
+    height: 100%;
+    background-color: #2C2C2C;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sidebar-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-content {
+    width: 100%;
+}
+
+.logo-img {
+    width: 80px;
+}
+
+.portrait-img {
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.sidebar-section-title {
+    color: #A3A3A3;
+    font-size: small;
+}
+
+.sidebar-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*Sidebar menu item styling*/
+.sidebar-menu-item {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #1E1E1E;
+    border-radius: 14px;
+    border: 1px solid #434343;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 6% 8%;
+    margin-bottom: 4%;
+}
+
+.sidebar-menu-item-icon {
+    color: white;
+    margin-right: 8%;
+}
+
+.sidebar-menu-item-title {
+    color: white;
+}
+/*-------------------------*/
+
+.sidebar-footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 200;
+    font-size: small;
+    height: 15%;
+}
+
+.sidebar-footer i {
+    margin: 1.5% 4%;
+}
+
+.sidebar-footer:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
