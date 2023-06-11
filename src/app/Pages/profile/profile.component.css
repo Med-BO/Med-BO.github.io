@@ -107,6 +107,10 @@
     margin-right: 3%;
 }
 
+.email {
+    text-decoration: none;
+}
+
 .email:hover {
     text-decoration: underline;
     color: #0074FF;

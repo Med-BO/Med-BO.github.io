@@ -10,6 +10,8 @@ import { ExperienceComponent } from './Pages/experience/experience.component';
 import { ProjectsComponent } from './Pages/projects/projects.component';
 import { SkillsComponent } from './Pages/skills/skills.component';
 import { IteamComponent } from './Pages/iteam/iteam.component';
+import { LocComponent } from './Pages/loc/loc.component';
+import { IsammComponent } from './Pages/isamm/isamm.component';
 
 
 const routes: Routes = [
@@ -21,6 +23,8 @@ const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
       { path: 'education', component: EducationComponent },
       { path: 'education/iteam', component: IteamComponent },
+      { path: 'education/loc', component: LocComponent },
+      { path: 'education/isamm', component: IsammComponent },
       { path: 'interests', component: InterestsComponent },
       { path: 'experience', component: ExperienceComponent },
       { path: 'projects', component: ProjectsComponent },

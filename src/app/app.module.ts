@@ -13,6 +13,8 @@ import { ExperienceComponent } from './Pages/experience/experience.component';
 import { ProjectsComponent } from './Pages/projects/projects.component';
 import { SkillsComponent } from './Pages/skills/skills.component';
 import { IteamComponent } from './Pages/iteam/iteam.component';
+import { LocComponent } from './Pages/loc/loc.component';
+import { IsammComponent } from './Pages/isamm/isamm.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { IteamComponent } from './Pages/iteam/iteam.component';
     ExperienceComponent,
     ProjectsComponent,
     SkillsComponent,
-    IteamComponent
+    IteamComponent,
+    LocComponent,
+    IsammComponent
   ],
   imports: [
     BrowserModule,

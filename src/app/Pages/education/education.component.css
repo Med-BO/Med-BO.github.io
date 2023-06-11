@@ -1,0 +1,23 @@
+.container {
+    height: 95%;
+    color: white;
+}
+
+.timeline {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.timeline-element {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-line {
+    width: 100%;
+    border-top: 3px solid #434343;
+}
