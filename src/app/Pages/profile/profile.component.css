@@ -1,0 +1,114 @@
+* {
+    color: white;
+}
+
+.container {
+    height: 95%;
+}
+
+.profile-header-section {
+    margin: 5% 0%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.portrait-img {
+    width: 150px;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    margin-right: 2%;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.name-flag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-flag {
+    width: 30px;
+}
+
+.full-name {
+    font-size: 2em;
+    font-weight: 400;
+    margin-right: 2%;
+    letter-spacing: 0.1em;
+    text-wrap: nowrap;
+}
+
+.current-position, .current-education {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.current-position-title, .current-education-title {
+    color: #D9D9D9;
+    margin-left: 2%;
+}
+
+.section-title {
+    color: #A3A3A3;
+    font-size: small;
+}
+
+.bio-text {
+    font-weight: 200;
+    text-align: justify;
+}
+
+.profile-contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    height: 10px;
+    width: 50%;
+}
+
+.contact-details {
+    height: 10px;
+    width: 50%;
+}
+
+.socials i {
+    margin-top: 3%;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    color: #0074FF;
+}
+
+.fa-linkedin {
+    margin-right: 5%;
+}
+
+.contact-section:nth-child(2) {
+    margin-top: 3%;
+}
+
+.contact-section i {
+    margin-right: 3%;
+}
+
+.email:hover {
+    text-decoration: underline;
+    color: #0074FF;
+    cursor: pointer;
+}

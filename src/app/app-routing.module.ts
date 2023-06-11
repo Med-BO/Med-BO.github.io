@@ -19,12 +19,8 @@ const routes: Routes = [
     path: 'home', component: HomeScreenComponent,
     children: [
       { path: 'profile', component: ProfileComponent },
-      {
-        path: 'education', component: EducationComponent,
-        children: [
-          { path: 'iteam', component: IteamComponent }
-        ]
-      },
+      { path: 'education', component: EducationComponent },
+      { path: 'education/iteam', component: IteamComponent },
       { path: 'interests', component: InterestsComponent },
       { path: 'experience', component: ExperienceComponent },
       { path: 'projects', component: ProjectsComponent },
