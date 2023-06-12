@@ -12,4 +12,8 @@ export class InterestsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  playGuitar() {
+    window.alert("Den den den ♩ ♪ ♫ ♬ - You didn't really think I was gonna code a guitar now did ya ?");
+  }
+
 }

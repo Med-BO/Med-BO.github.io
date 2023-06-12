@@ -1,0 +1,37 @@
+.container {
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.guitar {
+    width: 50%;
+}
+
+.chessboard {
+    width: 50%;
+}
+
+.guitar-img {
+    width: 200px;
+}
+
+.instruction {
+    position: absolute;
+    bottom: 50%;
+    left: 30.5%;
+    width: 120px;
+    height: 70px;
+    background-color: #1E1E1E;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.chessboard-img {
+    width: 500px;
+}
