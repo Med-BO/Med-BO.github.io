@@ -15,6 +15,7 @@ import { SkillsComponent } from './Pages/skills/skills.component';
 import { IteamComponent } from './Pages/iteam/iteam.component';
 import { LocComponent } from './Pages/loc/loc.component';
 import { IsammComponent } from './Pages/isamm/isamm.component';
+import { GuitarComponent } from './Pages/guitar/guitar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { IsammComponent } from './Pages/isamm/isamm.component';
     SkillsComponent,
     IteamComponent,
     LocComponent,
-    IsammComponent
+    IsammComponent,
+    GuitarComponent
   ],
   imports: [
     BrowserModule,

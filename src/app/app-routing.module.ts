@@ -12,6 +12,7 @@ import { SkillsComponent } from './Pages/skills/skills.component';
 import { IteamComponent } from './Pages/iteam/iteam.component';
 import { LocComponent } from './Pages/loc/loc.component';
 import { IsammComponent } from './Pages/isamm/isamm.component';
+import { GuitarComponent } from './Pages/guitar/guitar.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
       { path: 'education/loc', component: LocComponent },
       { path: 'education/isamm', component: IsammComponent },
       { path: 'interests', component: InterestsComponent },
+      { path: 'interests/guitar', component: GuitarComponent },
       { path: 'experience', component: ExperienceComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'skills', component: SkillsComponent },
