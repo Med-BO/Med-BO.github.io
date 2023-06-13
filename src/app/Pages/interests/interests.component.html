@@ -8,5 +8,26 @@
     </div>
     <div class="chessboard">
         <img class="chessboard-img" src="../../../assets/images/interests/chessboard.png" alt="">
+        <img [@imgAnimation]="animationState" (click)="toggleAnimationState()" class="queen-img" src="../../../assets/images/interests/queen.png" alt="">
+        <div class="instruction-queen">
+            <span>Click the Queen</span>
+            <i class="fa fa-hand-pointer"></i>
+        </div>
     </div>
 </div>
+
+<!--Modal for chess explanation-->
+<div class="modal" *ngIf="displayModal">
+    <div class="modal-header">
+        Quick Chess explanation
+        <i (click)="toggleModalDisplay()" class="fa fa-close"></i>
+    </div>
+    <div class="modal-content">
+        <img class="position-img" src="../../../assets/images/interests/chess_position.png" alt="">
+        <div class="position-explanation">
+            <p>• The Rook on b2 is already preventing the king from moving to e2 <br><br> • Qd1# checks the king with no way for him to espace.
+            <br><br>• In the endgame, it's crucial to prepare an espace route for the king if you find yourself in a similar position where the paws are blocking the king from moving forwards.</p>
+        </div>
+    </div>
+</div>
+<div class="modal-overlay" *ngIf="displayModal"></div>
