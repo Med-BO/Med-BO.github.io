@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { EventBusService } from '../../event-bus-service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home-screen',
@@ -10,12 +12,18 @@ export class HomeScreenComponent implements OnInit {
 
   routePath: string[] = [];
   activeRoute: string|undefined = "";
+  private subscription: Subscription;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private eventBusService: EventBusService) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         const route = this.router.routerState.snapshot.url;
         this.updateRoutePath(route);
+      }
+    });
+    this.subscription = this.eventBusService.getEventBus().subscribe((eventData: any) => {
+      if (eventData === 'navigated to profile') {
+        this.markProfileAsActiveTab();
       }
     });
   }
@@ -24,7 +32,7 @@ export class HomeScreenComponent implements OnInit {
     this.routePath = Array.from(route.split('/'));
     this.routePath.shift();
     this.activeRoute = this.routePath.pop();
-    this.activeRoute = this.activeRoute!.charAt(0).toUpperCase() + this.activeRoute!.slice(1)
+    this.activeRoute = this.activeRoute!.charAt(0).toUpperCase() + this.activeRoute!.slice(1);
     this.routePath = this.routePath.map(str => str.charAt(0).toUpperCase() + str.slice(1));
   }
 
@@ -46,6 +54,16 @@ export class HomeScreenComponent implements OnInit {
     }
     const clickedDiv = event.target as HTMLElement;
     clickedDiv.style.backgroundColor = '#0074FF';
+  }
+
+  markProfileAsActiveTab() {
+    const elements = document.getElementsByClassName('profile-menu-item');
+    const element = elements[0] as HTMLElement;
+    element.style.backgroundColor = '#0074FF';
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
   
 }

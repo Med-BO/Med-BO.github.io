@@ -21,7 +21,7 @@ export class LandingScreenComponent implements OnInit {
     element = document.querySelector('.logo-img');
     element!.classList.add('animate__animated', 'animate__zoomOut', 'animate__slow');
     setTimeout(() =>{
-      this.router.navigate(["home"]);
+      this.router.navigate(["home/profile"]);
     }, 1000);
   }
 

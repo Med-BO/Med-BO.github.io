@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventBusService } from '../../event-bus-service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private eventBusService: EventBusService) { }
 
   ngOnInit(): void {
+    this.eventBusService.emitEvent('navigated to profile');
   }
 
 }
