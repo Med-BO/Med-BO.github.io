@@ -63,6 +63,21 @@
     justify-content: space-between;
 }
 
+.skill-img {
+    width: 90%;
+    animation: fadeEffect 1s ease-in-out;
+} 
+
+.skill-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillset-title {
+    animation: fadeEffect 1s ease-in-out;
+}
+
 .key-icon {
     align-self: flex-end;
 }
@@ -104,4 +119,60 @@
     align-items: center;
     font-weight: 600;
 }
+
+.picked-skill-title {
+    animation: fadeEffect 1s ease-in-out;
+}
+
+.esc-key {
+    cursor: pointer;
+}
+
 /* -------------------- */
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.circle {
+    margin-left: auto;
+    margin-bottom: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1E1E1E;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .question-mark {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    white-space: nowrap;
+    padding: 4px 10px;
+    visibility: hidden;
+  }
+  
+  .circle:hover .tooltip {
+    visibility: visible;
+  }

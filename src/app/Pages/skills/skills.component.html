@@ -1,7 +1,12 @@
+<div class="circle">
+    <span class="question-mark">?</span>
+    <span class="tooltip">Click the function keys to display skills</span>
+  </div>
 <div class="container">
+    
     <div class="keyboard-container">
         <div class="keys-line functions-keys-line">
-            <div class="key">
+            <div class="key esc-key" (click)="pickSkill('none')">
                 Esc
             </div>
             <div class="key invisible">
@@ -46,89 +51,86 @@
             </div>
         </div>
         <div class="keys-line first-keys-line">
-            <div class="key">
-
+            <div class="key long-key">
+                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Web Development</span>
             </div>
-            <div class="key">
-                
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/angular.png" alt="Angular">
             </div>
-            <div class="key">
-                
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/react.png" alt="React">
             </div>
-            <div class="key">
-                
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/laravel.png" alt="Laravel">
             </div>
-            <div class="key">
-                
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/mongodb.png" alt="MongoDB">
             </div>
-            <div class="key">
-                
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/mysql.png" alt="MySQL">
             </div>
-            <div class="key">
-                
-            </div>
-            <div class="key">
-                
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/typescript.png" alt="TypeScript">
             </div>
             <div class="key long-key enter-key">
                 Hire me
             </div>
         </div>
         <div class="keys-line second-keys-line">
-            <div class="long-key">
-
+            <div class="key long-key">
+                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Mobile Development</span>
             </div>
-            <div class="key">
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/dart.png" alt="Dart">
+            </div>
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/flutter.png" alt="Flutter">
+            </div>
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
-                
-            </div>
-            <div class="key">
-                
-            </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
         </div>
         <div class="keys-line third-keys-line">
-            <div class="half-long-key">
-
+            <div class="half-long-key key">
+                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Testing</span>
             </div>
-            <div class="key">
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/phpunit.png" alt="PHPUnit">
+            </div>
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/sonarqube.png" alt="SonarQube">
+            </div>
+            <div class="key skill-key">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/eslint.png" alt="ESLint">
+            </div>
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
-            <div class="key">
-                
-            </div>
-            <div class="key">
-                
-            </div>
-            <div class="key">
-                
-            </div>
-            <div class="key">
+            <div class="key skill-key">
                 
             </div>
         </div>
@@ -143,11 +145,11 @@
                 Alt
             </div>
             <div class="space-key">
-                <span *ngIf="pickedSkill === 'dev'">Software Development</span>
-                <span *ngIf="pickedSkill === 'cloud'">Cloud & Virtualization</span>
-                <span *ngIf="pickedSkill === 'design'">Graphic Design</span>
-                <span *ngIf="pickedSkill === 'tools'">Tools</span>
-                <span *ngIf="pickedSkill === 'certifs'">Certificates</span>
+                <span class="picked-skill-title" *ngIf="pickedSkill === 'dev'">Software Development</span>
+                <span class="picked-skill-title" *ngIf="pickedSkill === 'cloud'">Cloud & Virtualization</span>
+                <span class="picked-skill-title" *ngIf="pickedSkill === 'design'">Graphic Design</span>
+                <span class="picked-skill-title" *ngIf="pickedSkill === 'tools'">Tools</span>
+                <span class="picked-skill-title" *ngIf="pickedSkill === 'certifs'">Certificates</span>
             </div>
             <div class="key">
                 
