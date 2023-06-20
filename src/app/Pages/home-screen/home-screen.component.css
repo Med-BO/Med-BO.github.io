@@ -27,7 +27,7 @@
 .route-info {
     height: 5%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     color: #A3A3A3;
     font-weight: 200;
@@ -94,7 +94,7 @@
     border: 1px solid #434343;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 6% 8%;
     margin-bottom: 4%;
     cursor: pointer;
