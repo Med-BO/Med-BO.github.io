@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    height: 95%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.keyboard-container {
+    width: 94%;
+    height: 86%;
+    margin-right: -2%;
+    background-color: #1E1E1E;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    padding: 2%;
+    padding-right: 0;
+}
+
+.keys-line {
+    display: flex;
+    width: 100%;
+    height: 16%;
+}
+
+.functions-keys-line {
+    margin-bottom: 4%;
+}
+
+.first-keys-line {
+    margin-bottom: 2%;
+}
+
+.second-keys-line {
+    margin-bottom: 2%;
+}
+
+.third-keys-line {
+    margin-bottom: 2%;
+}
+
+.fourth-keys-line {
+    margin-bottom: 2%;
+}
+
+.key {
+    box-sizing: border-box;
+    padding: 1%;
+    width: 8%;
+    margin-right: 2%;
+    height: 100%;
+    background-color: #727272;
+    border-radius: 8px;
+}
+
+/* Special keys styling */
+.f-key {
+    background-color: #0074ff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.key-icon {
+    align-self: flex-end;
+}
+
+.invisible {
+    background-color: #1E1E1E;
+}
+
+.enter-key {
+    background-color: #0074ff !important;
+    cursor: pointer;
+}
+
+.long-key {
+    width: 18%;
+    margin-right: 2%;
+    height: 100%;
+    background-color: #727272;
+    border-radius: 8px;
+}
+
+.half-long-key {
+    width: 14%;
+    margin-right: 6%;
+    height: 100%;
+    background-color: #727272;
+    border-radius: 8px;
+}
+
+.space-key {
+    width: 40%;
+    margin-right: 6%;
+    margin-left: 4%;
+    height: 100%;
+    background-color: #0074ff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+/* -------------------- */

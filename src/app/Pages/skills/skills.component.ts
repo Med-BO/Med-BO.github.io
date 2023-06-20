@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
+  pickedSkill: string = "none";
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  pickSkill(skill: string): void {
+    this.pickedSkill = skill;
+  }
 }

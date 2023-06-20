@@ -1,1 +1,160 @@
-<p>skills works!</p>
+<div class="container">
+    <div class="keyboard-container">
+        <div class="keys-line functions-keys-line">
+            <div class="key">
+                Esc
+            </div>
+            <div class="key invisible">
+                
+            </div>
+            <div class="key f-key" (click)="pickSkill('dev')">
+                <span>Dev</span>
+                <div class="key-icon">
+                    <i class="fa fa-terminal"></i>
+                </div>
+            </div>
+            <div class="key f-key" (click)="pickSkill('cloud')">
+                <span>Cloud</span>
+                <div class="key-icon">
+                    <i class="fa fa-cloud"></i>
+                </div>
+            </div>
+            <div class="key f-key" (click)="pickSkill('design')">
+                <span>Design</span>
+                <div class="key-icon">
+                    <i class="fa fa-bezier-curve"></i>
+                </div>
+            </div>
+            <div class="key">
+                F4
+            </div>
+            <div class="key invisible"></div>
+            <div class="key f-key" (click)="pickSkill('tools')">
+                <span>Tools</span>
+                <div class="key-icon">
+                    <i class="fa fa-laptop-code"></i>
+                </div>
+            </div>
+            <div class="key f-key" (click)="pickSkill('certifs')">
+                <span>Certifs</span>
+                <div class="key-icon">
+                    <i class="fa fa-medal"></i>
+                </div>
+            </div>
+            <div class="key">
+                
+            </div>
+        </div>
+        <div class="keys-line first-keys-line">
+            <div class="key">
+
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key long-key enter-key">
+                Hire me
+            </div>
+        </div>
+        <div class="keys-line second-keys-line">
+            <div class="long-key">
+
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+        </div>
+        <div class="keys-line third-keys-line">
+            <div class="half-long-key">
+
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+        </div>
+        <div class="keys-line fourth-keys-line">
+            <div class="key">
+
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                Alt
+            </div>
+            <div class="space-key">
+                <span *ngIf="pickedSkill === 'dev'">Software Development</span>
+                <span *ngIf="pickedSkill === 'cloud'">Cloud & Virtualization</span>
+                <span *ngIf="pickedSkill === 'design'">Graphic Design</span>
+                <span *ngIf="pickedSkill === 'tools'">Tools</span>
+                <span *ngIf="pickedSkill === 'certifs'">Certificates</span>
+            </div>
+            <div class="key">
+                
+            </div>
+            <div class="key">
+                
+            </div>
+        </div>
+    </div>
+</div>
