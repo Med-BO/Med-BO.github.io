@@ -16,6 +16,7 @@
     border-bottom-left-radius: 24px;
     padding: 2%;
     padding-right: 0;
+    animation: swipeLeft 1s ease-in-out;
 }
 
 .keys-line {
@@ -136,6 +137,15 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes swipeLeft {
+    0% {
+        margin-right: -100%;
+    }
+    100% {
+        margin-right: -2%;
     }
 }
 
