@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="key f-key" (click)="pickSkill('cloud')">
-                <span>Cloud</span>
+                <span>Ops</span>
                 <div class="key-icon">
                     <i class="fa fa-cloud"></i>
                 </div>
@@ -29,8 +29,11 @@
                     <i class="fa fa-bezier-curve"></i>
                 </div>
             </div>
-            <div class="key">
-                F4
+            <div class="key f-key" (click)="pickSkill('ai')">
+                <span>AI</span>
+                <div class="key-icon">
+                    <img style="margin-bottom: -6px;" src="../../../assets/images/technical_skills/ai.svg" alt="">
+                </div>
             </div>
             <div class="key invisible"></div>
             <div class="key f-key" (click)="pickSkill('tools')">
@@ -51,7 +54,7 @@
         </div>
         <div class="keys-line first-keys-line">
             <div class="key long-key">
-                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Web Development</span>
+                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Web & Mobile Development</span>
                 <span class="skillset-title" *ngIf="pickedSkill === 'cloud'">Cloud & Ops</span>
                 <span class="skillset-title" *ngIf="pickedSkill === 'design'">UI Design</span>
                 <span class="skillset-title" *ngIf="pickedSkill === 'tools'">Work Tools</span>
@@ -64,33 +67,33 @@
             </div>
             <div class="key skill-key">
                 <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/react.png" alt="React">
-                <img class="skill-img" *ngIf="pickedSkill === 'cloud'" src="../../../assets/images/technical_skills/github_actions.png" alt="GitHub Actions">
+                <img class="skill-img" *ngIf="pickedSkill === 'cloud'" src="../../../assets/images/technical_skills/azure.png" alt="Azure">
                 <img class="skill-img" *ngIf="pickedSkill === 'design'" src="../../../assets/images/technical_skills/xd.png" alt="Adobe XD">
                 <img class="skill-img" *ngIf="pickedSkill === 'tools'" src="../../../assets/images/technical_skills/github.png" alt="GitHub">
             </div>
             <div class="key skill-key">
                 <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/laravel.png" alt="Laravel">
+                <img class="skill-img" *ngIf="pickedSkill === 'cloud'" src="../../../assets/images/technical_skills/github_actions.png" alt="Github Actions">
                 <img class="skill-img" *ngIf="pickedSkill === 'tools'" src="../../../assets/images/technical_skills/jira.png" alt="Jira Software">
             </div>
             <div class="key skill-key">
-                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/mongodb.png" alt="MongoDB">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/nodejs.png" alt="Node.js">
+                <img class="skill-img" *ngIf="pickedSkill === 'cloud'" src="../../../assets/images/technical_skills/gcp.png" alt="Google Cloud Platform">
                 <img class="skill-img" *ngIf="pickedSkill === 'tools'" src="../../../assets/images/technical_skills/ms_office.png" alt="Microsoft Office">
             </div>
             <div class="key skill-key">
-                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/mysql.png" alt="MySQL">
-                <img class="skill-img" *ngIf="pickedSkill === 'tools'" src="../../../assets/images/technical_skills/postman.png" alt="Postman">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/django.png" alt="Django">
             </div>
             <div class="key skill-key">
-                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/typescript.png" alt="TypeScript">
-                <img class="skill-img" *ngIf="pickedSkill === 'tools'" src="../../../assets/images/technical_skills/swagger.png" alt="Swagger">
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/flask.png" alt="Flask">
             </div>
-            <div class="key long-key enter-key">
+            <div class="key long-key enter-key" (click)="downloadResume()">
                 Hire me
             </div>
         </div>
         <div class="keys-line second-keys-line">
             <div class="key long-key">
-                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Mobile Development</span>
+                <span class="skillset-title" *ngIf="pickedSkill === 'dev'"></span>
                 <span class="skillset-title" *ngIf="pickedSkill === 'cloud'">Virtualization</span>
                 <span class="skillset-title" *ngIf="pickedSkill === 'design'">Graphic Design</span>
             </div>
@@ -107,42 +110,45 @@
                 
             </div>
             <div class="key skill-key">
-                
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/mysql.png" alt="MySQL">
             </div>
             <div class="key skill-key">
-                
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/postgres.png" alt="PostgreSQL">
             </div>
             <div class="key skill-key">
-                
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/redis.png" alt="Redis">
             </div>
             <div class="key skill-key">
-                
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/mongodb.png" alt="MongoDB">
             </div>
             <div class="key skill-key">
-                
+
             </div>
             <div class="key skill-key">
-                
+
             </div>
         </div>
         <div class="keys-line third-keys-line">
             <div class="half-long-key key">
-                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Testing</span>
+                <span class="skillset-title" *ngIf="pickedSkill === 'dev'">Test & QA</span>
+                <span class="skillset-title" *ngIf="pickedSkill === 'cloud'">Automation</span>
             </div>
             <div class="key skill-key">
                 <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/phpunit.png" alt="PHPUnit">
+                <img class="skill-img" *ngIf="pickedSkill === 'cloud'" src="../../../assets/images/technical_skills/zapier.png" alt="Zapier">
             </div>
             <div class="key skill-key">
                 <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/sonarqube.png" alt="SonarQube">
+                <img class="skill-img" *ngIf="pickedSkill === 'cloud'" src="../../../assets/images/technical_skills/make.png" alt="Make">
             </div>
             <div class="key skill-key">
                 <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/eslint.png" alt="ESLint">
             </div>
-            <div class="key skill-key">
-                
+            <div class="key skill-key"> 
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/postman.png" alt="Postman">
             </div>
             <div class="key skill-key">
-                
+                <img class="skill-img" *ngIf="pickedSkill === 'dev'" src="../../../assets/images/technical_skills/swagger.png" alt="Swagger">
             </div>
             <div class="key skill-key">
                 

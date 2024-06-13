@@ -17,4 +17,12 @@ export class SkillsComponent implements OnInit {
   pickSkill(skill: string): void {
     this.pickedSkill = skill;
   }
+
+  downloadResume() {
+    const pdfUrl = 'assets/resume.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'resume-mohamed-ben-othman.pdf';
+    link.click();
+  }
 }
