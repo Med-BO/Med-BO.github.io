@@ -19,7 +19,7 @@ export class SkillsComponent implements OnInit {
   }
 
   downloadResume() {
-    const pdfUrl = 'assets/resume.pdf';
+    const pdfUrl = 'assets/resume_mbo.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'resume-mohamed-ben-othman.pdf';
