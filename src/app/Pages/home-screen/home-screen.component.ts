@@ -40,7 +40,7 @@ export class HomeScreenComponent implements OnInit {
   ngOnInit(): void {}
 
   downloadResume() {
-    const pdfUrl = 'assets/resume_mbo.pdf';
+    const pdfUrl = 'assets/Resume_Mohamed_Ben_Othman.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'resume-mohamed-ben-othman.pdf';
