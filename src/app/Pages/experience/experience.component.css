@@ -1,0 +1,182 @@
+.container {
+    width: 100%;
+    height: 95%;
+    color: white;
+    padding-top: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 2%;
+    }
+}
+
+.container::-webkit-scrollbar{
+    display: none !important;
+}
+
+.horizontal-divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .horizontal-divider {
+        margin-bottom: 10px;
+    }
+}
+
+.horizontal-divider span {
+    color: #A3A3A3;
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .horizontal-divider span {
+        white-space: nowrap;
+        font-size: 0.85em;
+    }
+}
+
+.separator {
+    width: 82%;
+    border-bottom: 1px solid #A3A3A3;
+}
+
+@media (max-width: 768px) {
+    .separator {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .separator {
+        width: 50%;
+    }
+}
+
+.experience-container {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        margin-bottom: 20px;
+    }
+}
+
+.experience-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+.company-logo {
+    width: 70px;
+}
+
+@media (max-width: 768px) {
+    .company-logo {
+        width: 50px;
+        align-self: flex-start;
+    }
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        margin-top: 5px;
+    }
+}
+
+.experience-date {
+    color: #A3A3A3;
+    font-weight: 200 !important;
+}
+
+@media (max-width: 768px) {
+    .experience-date {
+        font-size: 0.85em;
+        line-height: 1.5;
+    }
+}
+
+.experience-title {
+    color: white !important;
+}
+
+.experience-description {
+    margin: 0 3%;
+}
+
+@media (max-width: 768px) {
+    .experience-description {
+        margin: 0;
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+    
+    .experience-description p {
+        margin: 10px 0;
+    }
+}
+
+.top100 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.top100:hover {
+    color: rgb(0, 116, 255);
+}
+
+.hiddenimg {
+    display: none;
+    background-color: #1E1E1E;
+    padding: 14px;
+    border-radius: 14px;
+}
+
+@media (max-width: 768px) {
+    .hiddenimg {
+        display: none !important;
+    }
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+    display: block;
+    bottom: 22%;
+    position: absolute;
+    z-index: 2
+}
+
+@media (max-width: 768px) {
+    .hiddentxt:hover ~ .hiddenimg {
+        display: none;
+    }
+}

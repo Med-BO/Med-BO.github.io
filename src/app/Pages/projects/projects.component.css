@@ -162,3 +162,31 @@
 .project-type {
     color: #A3A3A3;
 }
+
+.project-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: #0074FF;
+}
+
+.project-link-text {
+    text-decoration: none;
+    color: #0074FF;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.project-link-text:hover {
+    opacity: 0.8;
+}
+
+.project-link-text i {
+    margin-left: 4px;
+    font-size: 0.9em;
+}

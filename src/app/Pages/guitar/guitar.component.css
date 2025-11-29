@@ -1,0 +1,187 @@
+div#lutemain1 {
+    vertical-align: middle;
+    margin-top: -100px;
+}
+
+@media (max-width: 768px) {
+    div#lutemain1 {
+        margin-top: -50px;
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 480px) {
+    div#lutemain1 {
+        margin-top: -30px;
+        transform: scale(0.5);
+    }
+}
+
+div#lutelines {
+    transform: rotateZ(90deg);
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+}
+
+div#vline1 {
+    width: 6px;
+    background-color: #ffc023;
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    div#vline1 {
+        margin-left: 20px;
+        width: 5px;
+    }
+}
+
+div#vline2 {
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%; 
+    float: left;
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    div#vline2 {
+        margin-left: 20px;
+        width: 5px;
+    }
+}
+
+div#vline3 {
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%; 
+    float: left;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    div#vline3 {
+        margin-left: 20px;
+        width: 5px;
+    }
+}
+
+div#vline4 {
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%; 
+    float: left;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    div#vline4 {
+        margin-left: 20px;
+        width: 5px;
+    }
+}
+
+div#vline5 {
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    div#vline5 {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 5px;
+    }
+}
+
+div#vline1:hover {
+    background-color: #803d1d
+}
+
+div#vline2:hover {
+    background-color: #803d1d
+}
+
+div#vline3:hover {
+    background-color: #803d1d
+}
+
+div#vline4:hover {
+    background-color: #803d1d
+}
+
+div#vline5:hover {
+    background-color: #803d1d
+}
+
+div#lutecircle {
+    width: 280px;
+    height: 280px;
+    background: #1E1E1E;
+    border: 8px solid #913a12;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -500px;
+}
+
+@media (max-width: 768px) {
+    div#lutecircle {
+        width: 200px;
+        height: 200px;
+        margin-top: -350px;
+        border-width: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    div#lutecircle {
+        width: 150px;
+        height: 150px;
+        margin-top: -250px;
+        border-width: 5px;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.back-btn {
+    padding: 5px;
+    background: #1E1E1E;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn:hover {
+    padding: 5px;
+    background: rgb(0, 116, 255);
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+}
