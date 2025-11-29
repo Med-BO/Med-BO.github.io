@@ -19,6 +19,20 @@ body {
     margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+    .logo-img {
+        width: 280px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 220px;
+        margin-bottom: 30px;
+    }
+}
+
 .button {
     background-color: #2F2F2F;
     color: white;
@@ -42,6 +56,32 @@ body {
   
 .button:hover {
     max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 10px;
+        height: 28px;
+    }
+    
+    .button:hover {
+        max-width: 250px;
+    }
+    
+    .icon {
+        font-size: 14px;
+        margin-right: 12px;
+        padding: 0px 6px;
+    }
+    
+    .text {
+        padding-right: 12px;
+        font-size: 14px;
+    }
+    
+    .start-icon {
+        font-size: 20px;
+    }
 }
   
 .icon {

@@ -13,6 +13,7 @@ export class HomeScreenComponent implements OnInit {
   routePath: string[] = [];
   activeRoute: string|undefined = "";
   private subscription: Subscription;
+  sidebarOpen: boolean = false;
 
   constructor(private router: Router, private eventBusService: EventBusService) {
     this.router.events.subscribe(event => {
@@ -54,6 +55,16 @@ export class HomeScreenComponent implements OnInit {
     }
     const clickedDiv = event.target as HTMLElement;
     clickedDiv.style.backgroundColor = '#0074FF';
+    // Close sidebar on mobile after selection
+    this.sidebarOpen = false;
+  }
+
+  toggleSidebar() {
+    this.sidebarOpen = !this.sidebarOpen;
+  }
+
+  closeSidebar() {
+    this.sidebarOpen = false;
   }
 
   markProfileAsActiveTab() {

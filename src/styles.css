@@ -3,8 +3,22 @@ html, body {
     margin: 0 !important;
     padding: 0 !important;
     font-family: 'Poppins';
+    overflow-x: hidden;
 }
 
 * {
     box-sizing: border-box;
+}
+
+/* Global Mobile Utilities */
+@media (max-width: 768px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html, body {
+        font-size: 13px;
+    }
 }

@@ -1,5 +1,16 @@
 <div class="background">
-    <div class="sidebar-container">
+    <!-- Mobile Header with Burger Button -->
+    <div class="mobile-header">
+        <button class="burger-btn" (click)="toggleSidebar()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Sidebar Overlay (for closing sidebar when clicking outside) -->
+    <div class="sidebar-overlay" [class.active]="sidebarOpen" (click)="closeSidebar()"></div>
+
+    <!-- Sidebar Container -->
+    <div class="sidebar-container" [class.open]="sidebarOpen">
         <div class="sidebar-header">
             <img class="logo-img" src="../../../assets/images/logo/Logo_white.png" alt="">
             <img class="portrait-img" src="../../../assets/images/portrait.jpg" alt="">

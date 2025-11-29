@@ -14,10 +14,26 @@
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .profile-header-section {
+        flex-direction: column;
+        text-align: center;
+        margin: 3% 0%;
+    }
+}
+
 .portrait-img {
     width: 150px;
     border-radius: 100%;
     margin-right: 2%;
+}
+
+@media (max-width: 768px) {
+    .portrait-img {
+        width: 120px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .general-info {
@@ -25,6 +41,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .general-info {
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .name-flag {
@@ -46,11 +69,26 @@
     text-wrap: nowrap;
 }
 
+@media (max-width: 768px) {
+    .full-name {
+        font-size: 1.5em;
+        margin-right: 1%;
+        text-wrap: wrap;
+        text-align: center;
+    }
+}
+
 .current-position, .current-education {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .current-position, .current-education {
+        justify-content: center;
+    }
 }
 
 .current-position-title, .current-education-title {
@@ -74,6 +112,14 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .profile-contact-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}
+
 .socials {
     height: 10px;
     width: 50%;
@@ -82,6 +128,13 @@
 .contact-details {
     height: 10px;
     width: 50%;
+}
+
+@media (max-width: 768px) {
+    .socials, .contact-details {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .socials i {
